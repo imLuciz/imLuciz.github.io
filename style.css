@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+}
+
+.wrapper {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.315);
+  width: 100%;
+  height: 100%;
+  
+}
+
+#background-video {
+  position: fixed;
+  object-fit: cover;
+  overflow: hidden;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  min-width: 100%;
+}
+.button {
+  width: 235px;
+  height: 60px;
+  border-width: 6px;
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.171); /* Green */
+  color: rgba(255, 255, 255, 0.438);
+  cursor: pointer;
+  position:fixed;
+  bottom: 525px;
+  right: 850px;
+}
+.button2{
+  width: 235px;
+  height: 60px;
+  border-width: 6px;
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.171); /* Green */
+  color: rgba(255, 255, 255, 0.438);
+  cursor: pointer;
+  position:fixed;
+  bottom: 450px;
+  right: 850px;
+}
+.button3{
+  width: 235px;
+  height: 60px;
+  border-width: 6px;
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.171); /* Green */
+  color: rgba(255, 255, 255, 0.438);
+  cursor: pointer;
+  position:fixed;
+  bottom: 15px;
+  right: 860px;
+}
+.button4{
+  width: 235px;
+  height: 60px;
+  border-width: 6px;
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.171); /* Green */
+  color: rgba(255, 255, 255, 0.438);
+  cursor: pointer;
+  position:fixed;
+  bottom: 15px;
+  right: 600px;
+}
+.button5{
+  width: 235px;
+  height: 60px;
+  border-width: 6px;
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.171); /* Green */
+  color: rgba(255, 255, 255, 0.438);
+  cursor: pointer;
+  position:fixed;
+  bottom: 15px;
+  right: 1120px;
+}
