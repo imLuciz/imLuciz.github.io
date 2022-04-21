@@ -1,86 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css" type="text/css">
-   <link rel="stylesheet" type="text/css" href="style.css">
-   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   <style type="text/css">
-      .OutlineText {
-         font: Tahoma, Geneva, sans-serif;
-         font-size: 64px;
-          color: white;
-          text-shadow:
-          /* Outline */
-          -1px -1px 0 #000000,
-          1px -1px 0 #000000,
-          -1px 1px 0 #000000,
-          1px 1px 0 #000000,  
-          -2px 0 0 #000000,
-          2px 0 0 #000000,
-          0 2px 0 #000000,
-          0 -2px 0 #000000; /* Terminate with a semi-colon */
-      }
-#btn{
-   width: 2000px;
-   height: 70px;
-   border-width: 4px;
-   border-radius: 35px;
-   font-size: 25px;
-   font-weight: bold;
-   color: rgb(0, 0, 0);
-   cursor: pointer;
-}
-#btn.active{
-   font-size: 23px;
-}
-      </style>
-<script src="https://kit.fontawesome.com/7741301c29.js" crossorigin="anonymous"></script></head>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/7741301c29.js" crossorigin="anonymous"></script>
+   
+   </head>
 <body>
    <video autoplay loop muted id="background-video" src="media/4K Beautiful Anime Scenery.mp4" type="video/mp4"></video>
    <div class="wrapper">
-      <!-- This is a comment -->
       <p style="color:transparent;" id="copy">! L2r ♪.#9026</p>
-      <!-- Comments are not displayed in the browser -->
       <audio id="myAudio">
          <source src="horse.ogg" type="audio/ogg">
          <source src="media/hi.mp3" type="audio/mp3">
          Your browser does not support the audio element.
-       </audio>
+      </audio>
        
        
-       <button class="button" onclick="playAudio()" type="button">UnMute</button>
-       <button class="button2" onclick="pauseAudio()" type="button">Mute</button> 
-       <button class="button3" type="button" onclick="copyEvent('copy')"><i class='fab fa-discord'></i>   Discord</button>
-       <a href="https://www.instagram.com/imluciz/" target="_blank">
-       <button class="button4" type="button"><i class="fa-brands fa-instagram"></i>     Instagram</button> 
-       </a>
-       <a href="https://www.youtube.com/channel/UCv417n91o8-HFEp-9xlMehQ" target="_blank">
-       <button class="button5" type="button"><i class="fa-brands fa-youtube"></i>     YouTube</button> 
-      </a>
-
-       <script>
-           function copyEvent(id)
-           {
-               var str = document.getElementById(id);
-               window.getSelection().selectAllChildren(str);
-               document.execCommand("Copy")
-           }
-       </script>
-       <script>
-       var x = document.getElementById("myAudio"); 
-       
-       function playAudio() { 
-         x.play(); 
-       } 
-       
-       function pauseAudio() { 
-         x.pause(); 
-       } 
-       </script>
-   
+      <button class="button" onclick="playAudio()" type="button">UnMute</button>
+      <button class="button2" onclick="pauseAudio()" type="button">Mute</button> 
+      <div class="bottomButtons">
+         <a href="https://www.instagram.com/imluciz/" target="_blank">
+            <button class="button4" type="button"><i class="fa-brands fa-instagram"></i>     </button> 
+         </a>
+         <button id="discordButton" class="button3" type="button" onclick="copyDiscordTag()"><i class='fab fa-discord'></i>   </button>
+        
+         <a href="https://www.youtube.com/channel/UCv417n91o8-HFEp-9xlMehQ" target="_blank">
+            <button class="button5" type="button"><i class="fa-brands fa-youtube"></i>     </button> 
+         </a>
+      </div>
    </div>
-
+   <script src="script.js"></script>
 </body>
 </html>

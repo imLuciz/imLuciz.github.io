@@ -9,7 +9,10 @@ body {
   background: rgba(0, 0, 0, 0.315);
   width: 100%;
   height: 100%;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #background-video {
@@ -32,9 +35,8 @@ body {
   background-color: rgba(128, 128, 128, 0.171); /* Green */
   color: rgba(255, 255, 255, 0.438);
   cursor: pointer;
-  position:fixed;
-  bottom: 525px;
-  right: 850px;
+  position: relative;
+  bottom: 20px;
 }
 .button2{
   width: 235px;
@@ -46,49 +48,76 @@ body {
   background-color: rgba(128, 128, 128, 0.171); /* Green */
   color: rgba(255, 255, 255, 0.438);
   cursor: pointer;
-  position:fixed;
-  bottom: 450px;
-  right: 850px;
 }
+
+.bottomButtons {
+  position: absolute;
+  bottom: 16px;
+}
+
 .button3{
-  width: 235px;
+  width: 100px;
   height: 60px;
   border-width: 6px;
   border-radius: 60px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   background-color: rgba(128, 128, 128, 0.171); /* Green */
   color: rgba(255, 255, 255, 0.438);
   cursor: pointer;
-  position:fixed;
-  bottom: 15px;
-  right: 860px;
 }
 .button4{
-  width: 235px;
+  width: 100px;
   height: 60px;
   border-width: 6px;
   border-radius: 60px;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   background-color: rgba(128, 128, 128, 0.171); /* Green */
   color: rgba(255, 255, 255, 0.438);
   cursor: pointer;
-  position:fixed;
-  bottom: 15px;
-  right: 600px;
 }
 .button5{
-  width: 235px;
+  width: 100px;
   height: 60px;
   border-width: 6px;
   border-radius: 60px;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   background-color: rgba(128, 128, 128, 0.171); /* Green */
   color: rgba(255, 255, 255, 0.438);
   cursor: pointer;
-  position:fixed;
-  bottom: 15px;
-  right: 1120px;
+ 
 }
+.OutlineText {
+  font: Tahoma, Geneva, sans-serif;
+  font-size: 64px;
+   color: white;
+   text-shadow:
+   /* Outline */
+   -1px -1px 0 #000000,
+   1px -1px 0 #000000,
+   -1px 1px 0 #000000,
+   1px 1px 0 #000000,  
+   -2px 0 0 #000000,
+   2px 0 0 #000000,
+   0 2px 0 #000000,
+   0 -2px 0 #000000; /* Terminate with a semi-colon */
+}
+#btn{
+  width: 2000px;
+  height: 70px;
+  border-width: 4px;
+  border-radius: 35px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+#btn.active{
+  font-size: 23px;
+}
+a {
+  color: transparent;
+}
+
