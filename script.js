@@ -10,7 +10,7 @@ function pauseAudio() {
   audio.pause();
 }
 function copyDiscordTag() {
-  navigator.clipboard.writeText("! L2r ♪.#9026");
+  navigator.clipboard.writeText("♪.#4224");
   discordButton.innerHTML = "Copied!";
   delay(1200).then(() => (discordButton.innerHTML = discordButtonContent));
 }
