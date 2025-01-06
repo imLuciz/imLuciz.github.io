@@ -1,14 +1,16 @@
 var audio = document.getElementById("myAudio");
-var discordButton = document.getElementById("discordButton");
-var discordButtonContent = discordButton.innerHTML;
+var muteButton = document.getElementById("muteButton");
 
-function playAudio() {
-  audio.play();
+function toggleMuteUnmute() {
+  if (audio.paused) {
+    audio.play();
+    muteButton.innerHTML = "Mute";
+  } else {
+    audio.pause();
+    muteButton.innerHTML = "Unmute";
+  }
 }
 
-function pauseAudio() {
-  audio.pause();
-}
 function copyDiscordTag() {
   navigator.clipboard.writeText("0rr.");
   discordButton.innerHTML = "Copied!";
